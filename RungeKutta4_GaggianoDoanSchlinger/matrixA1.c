@@ -11,25 +11,12 @@
 
 
 
-void buildMatrixA1(struct matrix *pmA1_res, struct vector *pvX1_res){
-
-
-//Erstelle Matrizen mA1 und Vektor vX1:
-	struct matrix mA1;
-	struct vector vX1;
-
-	struct matrix *pmA1;
-	struct vector *pvX1;
-
-//Zeiger initialisieren:
-
-	pmA1 = &mA1;
-	pvX1 = &vX1;
+void buildMatrixA1(struct matrix* pmA1, struct vector* pvIC1){
 
 //Initialisiere Matrizen und Vektoren:
 	init_mat(pmA1,3,3);
 
-	init_vec(pvX1,3);
+	init_vec(pvIC1,3);
 
 //Matrix mA1
 	matrix_setval(pmA1,0,0,0);
@@ -43,11 +30,8 @@ void buildMatrixA1(struct matrix *pmA1_res, struct vector *pvX1_res){
 	matrix_setval(pmA1,2,2,-6);
 
 //Vektor vX1
-	vector_setval(pvX1,0,5);
-	vector_setval(pvX1,1,2);
-	vector_setval(pvX1,2,0);
+	vector_setval(pvIC1,0,5);
+	vector_setval(pvIC1,1,2);
+	vector_setval(pvIC1,2,0);
 
-//Uebergebe fertig gebaute Matrix und Anfangsbedingung der main.c
-	pmA1_res = &pmA1;
-	pvX1_res = &pvX1;
 }

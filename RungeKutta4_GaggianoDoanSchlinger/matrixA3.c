@@ -9,20 +9,8 @@
 #include "matrixmath.h"
 
 
-void buildMatrixA3(struct matrix *pmA3_res, struct vector *pvX3_res){
+void buildMatrixA3(struct matrix *pmA3, struct vector *pvX3){
 
-
-//Erstelle Matrizen mA3 und Vektor vX3:
-	struct matrix mA3;
-	struct vector vX3;
-
-	struct matrix *pmA3;
-	struct vector *pvX3;
-
-//Zeiger initialisieren:
-
-		pmA3 = &mA3;
-		pvX3 = &vX3;
 
 //Initialisiere Matrizen und Vektoren:
 		init_mat(pmA3,4,4);
@@ -51,7 +39,4 @@ void buildMatrixA3(struct matrix *pmA3_res, struct vector *pvX3_res){
 		vector_setval(pvX3,1,0);
 		vector_setval(pvX3,2,1);
 
-//Uebergebe fertig gebaute Matrix und Anfangsbedingung der main.c
-		pmA3_res = &pmA3;
-		pvX3_res = &pvX3;
 }
