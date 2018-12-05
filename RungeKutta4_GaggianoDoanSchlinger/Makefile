@@ -5,7 +5,7 @@ TARGET = program
 
 # zu kompilierende Source Dateien
 # Beachte: keine Leerzeichen nach dem Backslash. Der Backslash wandelt den Folgenden Zeilenumbruch für das make Programm in ein gewöhnliches weißes Zeichen um
-CSRC = 	main.c	\
+CSRC = 	main.c	matrixA1.c	matrixA2.c	matrixA3.c\
 		
 # Suchpfade für Header-Dateien
 INCDIRS = ../matrixmath/include
