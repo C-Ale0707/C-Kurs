@@ -9,7 +9,7 @@
 #include "matrixmath.h"
 
 
-void buildMatrixA3(struct matrix *pmA3, struct vector *pvX3){
+void buildSystemA3(struct matrix *pmA3, struct vector *pvX3){
 
 
 //Initialisiere Matrizen und Vektoren:
