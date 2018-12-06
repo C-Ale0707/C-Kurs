@@ -1,0 +1,10 @@
+10:34:01 **** Build of configuration Default for project matrixmath ****
+make all 
+mkdir -p lib
+mkdir -p include
+ar rvs lib/libmatrixmath.a matrixmath.o  
+r - matrixmath.o
+cp -uf matrixmath.h include/matrixmath.h	
+
+10:34:03 Build Finished (took 1s.205ms)
+

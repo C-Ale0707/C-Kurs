@@ -36,7 +36,7 @@ int main (){
 
 	// rungeKutta4(&mA2,&vIC2,ciT_sim,cdH);
 
-	rungeKutta4(&mA3,&vIC3,ciT_sim,cdH);
+	rungeKutta4(&mA1,&vIC1,ciT_sim,cdH);
 
 
 	//Gebe nicht mehr benötigten Arbeitspeicherfrei:

@@ -6,7 +6,6 @@ int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, cons
 
 	// Anzahl der Schritte errechnen
 	const int ciSteps = ciT_sim/cdH;
-
 	// int ciSteps = 200;
 
 	// Dimension der Matrix erfassen
@@ -36,27 +35,50 @@ int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, cons
 	// Anfangsbedingung vX zuweisen
 	vX = *pvIC;
 
+	//Zwischenvariablen intialisieren
+	struct vector vK21;		//Zwischenvariablen, um vK2 zu berechnen
+	struct vector vK22;
+	struct vector vK31;
+	struct vector vK32;
+	struct vector vK41;
+	struct vector vK42;
+
+	init_vec(&vK21,iDimA);
+	init_vec(&vK22,iDimA);
+	init_vec(&vK31,iDimA);
+	init_vec(&vK32,iDimA);
+	init_vec(&vK41,iDimA);
+	init_vec(&vK42,iDimA);
+
 
 	//Anfang Runge-Kutta-Verfahren
 	for(int i=0; i<ciSteps; i++){
 
 		// Runge-Kutta-Variablen K1 errechnen
 		mv_mult(pmA,&vX,&vK1);
+		//vprint(&vK1);
+
 
 		// Runge-Kutta-Variablen K2 errechnen
-		v_scal(&vK1,cdH/2.0,&vK2);
-		vv_add(&vX,&vK2,&vK2);
-		mv_mult(pmA,&vK2,&vK2);
+		v_scal(&vK1,cdH/2.0,&vK21);
+		vv_add(&vX,&vK21,&vK22);
+		mv_mult(pmA,&vK22,&vK2);
+		//vprint(&vK2);
+
 
 		// Runge-Kutta-Variablen K3 errechnen
-		v_scal(&vK2,cdH/2.0,&vK3);
-		vv_add(&vX,&vK3,&vK3);
-		mv_mult(pmA,&vK3,&vK3);
+		v_scal(&vK2,cdH/2.0,&vK31);
+		vv_add(&vX,&vK31,&vK32);
+		mv_mult(pmA,&vK32,&vK3);
+		//vprint(&vK3);
+
 
 		// Runge-Kutta-Variablen K4 errechnen
-		v_scal(&vK3,cdH,&vK4);
-		vv_add(&vX,&vK4,&vK4);
-		mv_mult(pmA,&vK4,&vK4);
+		v_scal(&vK3,cdH,&vK41);
+		vv_add(&vX,&vK41,&vK42);
+		mv_mult(pmA,&vK42,&vK4);
+		//vprint(&vK4);
+
 
 		// Den Ks ihre Gewichtungsfaktoren multiplizieren
 		v_scal(&vK1,cdH/6.0,&vK1);
@@ -67,14 +89,13 @@ int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, cons
 		// Ks zusammenaddieren
 		vv_add(&vK1,&vK2,&vK1);
 		vv_add(&vK3,&vK4,&vK3);
-
 		vv_add(&vK1,&vK3,&vK1);
 
 		// Ks * h mit ursprünglichem Wert addieren
 		vv_add(&vX,&vK1,&vX);
 
 		//Ergebnis ausgeben
-		printf("%i\n",i);
+		//printf("%i\n",i);
 		vprint(&vX);
 	}
 

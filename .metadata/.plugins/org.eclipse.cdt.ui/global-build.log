@@ -1,0 +1,59 @@
+13:10:02 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+runge-kutta-4.c: In function 'rungeKutta4':
+runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
+  const int ciSteps = ciT_sim/cdH;
+            ^
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+13:10:05 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+make: Nothing to be done for 'all'.
+13:35:53 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+runge-kutta-4.c: In function 'rungeKutta4':
+runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
+  const int ciSteps = ciT_sim/cdH;
+            ^
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+13:37:18 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+runge-kutta-4.c: In function 'rungeKutta4':
+runge-kutta-4.c:99:15: error: invalid operands to binary & (have 'char *' and 'struct vector')
+   vprint("X1:"&vX);
+               ^
+runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
+  const int ciSteps = ciT_sim/cdH;
+            ^
+make: *** [runge-kutta-4.o] Error 1
+Makefile:58: recipe for target 'runge-kutta-4.o' failed
+13:37:41 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+runge-kutta-4.c: In function 'rungeKutta4':
+runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
+  const int ciSteps = ciT_sim/cdH;
+            ^
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+13:42:27 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+runge-kutta-4.c: In function 'rungeKutta4':
+runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
+  const int ciSteps = ciT_sim/cdH;
+            ^
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+13:47:54 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+runge-kutta-4.c: In function 'rungeKutta4':
+runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
+  const int ciSteps = ciT_sim/cdH;
+            ^
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+13:49:14 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
