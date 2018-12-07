@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "matrixmath.h"
 
+//Fehlercodes:
+
+#define SUCCESS 0
+#define INCOMPATIBLE_DIM 1
+
 int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, const double cdH){
 
 	// Anzahl der Schritte errechnen
@@ -11,8 +16,27 @@ int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, cons
 	// Dimension der Matrix erfassen
 	int iDimA = pmA->icol;
 
+	//Dimension der Anfangsbedingung
+	int iDimvIC = pvIC->irow;
 
-	// Runge-Kutta-Variablen initialiseren
+	//Überprüfung der Dimensionskompatibilität zwischen Systemmatrix pmA & AB: pvIC:
+
+	if(iDimA == iDimvIC){
+		printf("Dimensionen sind kompatibel \n");
+		printf("Starte Berechnungen... \n");
+		printf("\n");
+
+
+	}else{
+		printf("Inkompatible Dimensionen!\n");
+		printf("Runge-Kutta4 kann nicht auf gewünschtes System durchgeführt werden...Abbruch\n");
+		printf("----------------------------------------------------------------------------\n");
+
+		return INCOMPATIBLE_DIM;
+	}
+
+
+	// Runge-Kutta-Variablen (Vektoren) initialiseren
 	struct vector vK1;
 	struct vector vK2;
 	struct vector vK3;
@@ -32,10 +56,12 @@ int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, cons
 	// Approximations-Vektor initialiseren
 	struct vector vX;
 	init_vec(&vX,iDimA);
+
 	// Anfangsbedingung vX zuweisen
 	vX = *pvIC;
 
 	//Zwischenvariablen intialisieren
+
 	struct vector vK21;		//Zwischenvariablen, um vK2 zu berechnen
 	struct vector vK22;
 	struct vector vK31;
@@ -94,9 +120,10 @@ int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, cons
 		// Ks * h mit ursprünglichem Wert addieren
 		vv_add(&vX,&vK1,&vX);
 
-		//Ergebnis ausgeben
+		//Ergebnis ausgeben:
 		//printf("%i\n",i);
 		vprint(&vX);
+		printf("\n");
 	}
 
 	free_vec(&vK1);
@@ -105,5 +132,9 @@ int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, cons
 	free_vec(&vK4);
 	free_vec(&vX);
 
-	return 1;
+	//Füge optischen Zeilenabstand für bessere Consolendarstellung
+	printf("---------------------------\n");
+	printf("\n");
+
+	return SUCCESS ;
 }

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 	<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
-		<provider class="org.eclipse.cdt.managedbuilder.internal.language.settings.providers.GCCBuiltinSpecsDetectorMinGW" console="false" env-hash="-77083449444316910" id="org.eclipse.cdt.managedbuilder.core.GCCBuiltinSpecsDetectorMinGW" keep-relative-paths="false" name="CDT GCC Built-in Compiler Settings MinGW" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;">
+		<provider class="org.eclipse.cdt.managedbuilder.internal.language.settings.providers.GCCBuiltinSpecsDetectorMinGW" console="false" env-hash="1534440538767136752" id="org.eclipse.cdt.managedbuilder.core.GCCBuiltinSpecsDetectorMinGW" keep-relative-paths="false" name="CDT GCC Built-in Compiler Settings MinGW" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;">
 			<language-scope id="org.eclipse.cdt.core.gcc"/>
 			<language-scope id="org.eclipse.cdt.core.g++"/>
 			<language id="org.eclipse.cdt.core.gcc">
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/include">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/include">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/x86_64-w64-mingw32/include">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/x86_64-w64-mingw32/include">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="WIN32" value="1">
@@ -802,25 +802,25 @@
 				</entry>
 			</language>
 			<language id="org.eclipse.cdt.core.g++">
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/include">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/include">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="includePath" name="C:/CKurs/ckurs_sandbox/ckurs_sandbox/tdm_gcc/x86_64-w64-mingw32/include">
+				<entry kind="includePath" name="C:/ckurs/02_Software/ckurs_sandbox/tdm_gcc/x86_64-w64-mingw32/include">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="WIN32" value="1">

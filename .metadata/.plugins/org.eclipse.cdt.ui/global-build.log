@@ -57,3 +57,115 @@ gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2
 make all 
 gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
 gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+16:58:10 **** Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+16:58:12 **** Build of configuration Default for project matrixmath ****
+make all 
+mkdir -p lib
+mkdir -p include
+ar rvs lib/libmatrixmath.a matrixmath.o  
+r - matrixmath.o
+cp -uf matrixmath.h include/matrixmath.h	
+16:58:15 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+make: Nothing to be done for 'all'.
+00:02:29 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:02:33 **** Incremental Build of configuration Default for project matrixmath ****
+make all 
+mkdir -p lib
+mkdir -p include
+ar rvs lib/libmatrixmath.a matrixmath.o  
+r - matrixmath.o
+cp -uf matrixmath.h include/matrixmath.h	
+00:02:36 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+make: Nothing to be done for 'all'.
+00:03:36 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:04:03 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:05:13 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:05:48 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:07:28 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:08:16 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:08:35 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:09:35 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
+main.c: In function 'main':
+main.c:33:12: warning: unused variable 'ciT_sim' [-Wunused-variable]
+  const int ciT_sim=10;
+            ^
+main.c:32:15: warning: unused variable 'cdH' [-Wunused-variable]
+  const double cdH=0.05;
+               ^
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:09:51 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:10:37 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:17:50 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  matrixA1.c -c -o matrixA1.o 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  matrixA2.c -c -o matrixA2.o 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  matrixA3.c -c -o matrixA3.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:21:48 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:25:51 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:26:39 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:27:55 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:29:32 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:31:03 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+00:35:01 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath

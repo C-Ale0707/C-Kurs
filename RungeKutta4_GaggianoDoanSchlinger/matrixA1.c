@@ -11,7 +11,7 @@
 
 
 
-void buildMatrixA1(struct matrix* pmA1, struct vector* pvIC1){
+void buildSystemA1(struct matrix* pmA1, struct vector* pvIC1){
 
 //Initialisiere Matrizen und Vektoren:
 	init_mat(pmA1,3,3);
