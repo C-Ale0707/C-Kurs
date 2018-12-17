@@ -1,171 +1,546 @@
-13:10:02 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+13:28:49 **** Incremental Build of configuration Default for project iir_test_filter ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-runge-kutta-4.c: In function 'rungeKutta4':
-runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
-  const int ciSteps = ciT_sim/cdH;
-            ^
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-13:10:05 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-make: Nothing to be done for 'all'.
-13:35:53 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-runge-kutta-4.c: In function 'rungeKutta4':
-runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
-  const int ciSteps = ciT_sim/cdH;
-            ^
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-13:37:18 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-runge-kutta-4.c: In function 'rungeKutta4':
-runge-kutta-4.c:99:15: error: invalid operands to binary & (have 'char *' and 'struct vector')
-   vprint("X1:"&vX);
-               ^
-runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
-  const int ciSteps = ciT_sim/cdH;
-            ^
-make: *** [runge-kutta-4.o] Error 1
-Makefile:58: recipe for target 'runge-kutta-4.o' failed
-13:37:41 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-runge-kutta-4.c: In function 'rungeKutta4':
-runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
-  const int ciSteps = ciT_sim/cdH;
-            ^
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-13:42:27 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-runge-kutta-4.c: In function 'rungeKutta4':
-runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
-  const int ciSteps = ciT_sim/cdH;
-            ^
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-13:47:54 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-runge-kutta-4.c: In function 'rungeKutta4':
-runge-kutta-4.c:8:12: warning: unused variable 'ciSteps' [-Wunused-variable]
-  const int ciSteps = ciT_sim/cdH;
-            ^
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-13:49:14 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-16:58:10 **** Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-16:58:12 **** Build of configuration Default for project matrixmath ****
-make all 
-mkdir -p lib
-mkdir -p include
-ar rvs lib/libmatrixmath.a matrixmath.o  
-r - matrixmath.o
-cp -uf matrixmath.h include/matrixmath.h	
-16:58:15 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-make: Nothing to be done for 'all'.
-00:02:29 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:02:33 **** Incremental Build of configuration Default for project matrixmath ****
-make all 
-mkdir -p lib
-mkdir -p include
-ar rvs lib/libmatrixmath.a matrixmath.o  
-r - matrixmath.o
-cp -uf matrixmath.h include/matrixmath.h	
-00:02:36 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-make: Nothing to be done for 'all'.
-00:03:36 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:04:03 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:05:13 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:05:48 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:07:28 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:08:16 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:08:35 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:09:35 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
-make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+In file included from main.c:6:0:
 main.c: In function 'main':
-main.c:33:12: warning: unused variable 'ciT_sim' [-Wunused-variable]
-  const int ciT_sim=10;
-            ^
-main.c:32:15: warning: unused variable 'cdH' [-Wunused-variable]
-  const double cdH=0.05;
-               ^
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:09:51 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:30:13: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+             ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:30:13: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+             ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:30:13: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+             ^
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:30:13: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+             ^
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:30:42: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                          ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:30:42: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                          ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:30:42: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                          ^
+main.c:30:62: error: subscripted value is neither array nor pointer nor vector
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                                              ^
+In file included from main.c:6:0:
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:30:42: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n= (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                          ^
+main.c:52:48: error: 'aFilterkoeffizienten' undeclared (first use in this function)
+  if(setze_koeffizienten(pfir_filter_variablen, aFilterkoeffizienten)!= RET_SUCCESS){
+                                                ^
+main.c:52:48: note: each undeclared identifier is reported only once for each function it appears in
+Makefile:58: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+14:58:35 **** Build of configuration Default for project fir_filter_v1 ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:10:37 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+14:58:37 **** Incremental Build of configuration Default for project iir_test_filter ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:17:50 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+main.c:5:27: fatal error: fir_filter_v1.h: No such file or directory
+compilation terminated.
+Makefile:58: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+14:58:39 **** Incremental Build of configuration Default for project fir_filter_v1 ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  matrixA1.c -c -o matrixA1.o 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  matrixA2.c -c -o matrixA2.o 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  matrixA3.c -c -o matrixA3.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:21:48 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+14:58:40 **** Incremental Build of configuration Default for project iir_test_filter ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:25:51 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+In file included from main.c:5:0:
+main.c: In function 'main':
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:29:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:29:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:29:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:29:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:29:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:29:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:29:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+main.c:29:63: error: subscripted value is neither array nor pointer nor vector
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                                               ^
+In file included from main.c:5:0:
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:29:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+main.c:31:71: error: invalid application of 'sizeof' to incomplete type 'struct iir_filter_variablen'
+  piir_filter_variablen = (struct iir_filter_variablen *)malloc(sizeof(struct iir_filter_variablen));
+                                                                       ^
+main.c:41:5: warning: implicit declaration of function 'alloc_iir_filter_variablen_struct' [-Wimplicit-function-declaration]
+  if(alloc_iir_filter_variablen_struct(piir_filter_variablen,n) != RET_SUCCESS){
+     ^
+main.c:41:67: error: 'RET_SUCCESS' undeclared (first use in this function)
+  if(alloc_iir_filter_variablen_struct(piir_filter_variablen,n) != RET_SUCCESS){
+                                                                   ^
+main.c:41:67: note: each undeclared identifier is reported only once for each function it appears in
+main.c:51:5: warning: implicit declaration of function 'setze_koeffizienten' [-Wimplicit-function-declaration]
+  if(setze_koeffizienten(piir_filter_variablen, ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+     ^
+main.c:100:4: warning: implicit declaration of function 'free_iir_filter_variablen_struct' [-Wimplicit-function-declaration]
+    free_iir_filter_variablen_struct(piir_filter_variablen);
+    ^
+main.c:114:4: warning: implicit declaration of function 'filterausgabe_berechnen' [-Wimplicit-function-declaration]
+    filterausgabe_berechnen(piir_filter_variablen, dEingangssignal,&dAusgangssignal);
+    ^
+make: *** [main.o] Error 1
+Makefile:58: recipe for target 'main.o' failed
+15:01:39 **** Incremental Build of configuration Default for project fir_filter_v1 ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:26:39 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+15:01:40 **** Incremental Build of configuration Default for project iir_test_filter ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:27:55 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+In file included from main.c:5:0:
+main.c: In function 'main':
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:29:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:29:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:29:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:29:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:29:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:29:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:29:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+main.c:29:63: error: subscripted value is neither array nor pointer nor vector
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                                               ^
+In file included from main.c:5:0:
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:29:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+main.c:31:71: error: invalid application of 'sizeof' to incomplete type 'struct iir_filter_variablen'
+  piir_filter_variablen = (struct iir_filter_variablen *)malloc(sizeof(struct iir_filter_variablen));
+                                                                       ^
+main.c:41:5: warning: implicit declaration of function 'alloc_iir_filter_variablen_struct' [-Wimplicit-function-declaration]
+  if(alloc_iir_filter_variablen_struct(piir_filter_variablen,n) != RET_SUCCESS){
+     ^
+main.c:41:67: error: 'RET_SUCCESS' undeclared (first use in this function)
+  if(alloc_iir_filter_variablen_struct(piir_filter_variablen,n) != RET_SUCCESS){
+                                                                   ^
+main.c:41:67: note: each undeclared identifier is reported only once for each function it appears in
+main.c:51:5: warning: implicit declaration of function 'setze_koeffizienten' [-Wimplicit-function-declaration]
+  if(setze_koeffizienten(piir_filter_variablen, ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+     ^
+main.c:100:4: warning: implicit declaration of function 'free_iir_filter_variablen_struct' [-Wimplicit-function-declaration]
+    free_iir_filter_variablen_struct(piir_filter_variablen);
+    ^
+main.c:114:4: warning: implicit declaration of function 'filterausgabe_berechnen' [-Wimplicit-function-declaration]
+    filterausgabe_berechnen(piir_filter_variablen, dEingangssignal,&dAusgangssignal);
+    ^
+Makefile:58: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:03:13 **** Incremental Build of configuration Default for project fir_filter_v1 ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:29:32 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+15:03:14 **** Incremental Build of configuration Default for project iir_test_filter ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:31:03 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+In file included from main.c:5:0:
+main.c: In function 'main':
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+main.c:30:63: error: subscripted value is neither array nor pointer nor vector
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                                               ^
+In file included from main.c:5:0:
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:30: error: incompatible type for argument 2 of 'setze_koeffizienten'
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                              ^
+main.c:52:48: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  if(setze_koeffizienten(piir_filter_variablen, ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+                                                ^
+In file included from main.c:6:0:
+include/iir_filter_v1.h:45:5: note: expected 'double *' but argument is of type 'double'
+ int setze_koeffizienten(struct iir_filter_variablen* piir_filter_variablen, double * aKoeffs);
+     ^
+main.c:52:5: error: too many arguments to function 'setze_koeffizienten'
+  if(setze_koeffizienten(piir_filter_variablen, ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+     ^
+In file included from main.c:6:0:
+include/iir_filter_v1.h:45:5: note: declared here
+ int setze_koeffizienten(struct iir_filter_variablen* piir_filter_variablen, double * aKoeffs);
+     ^
+Makefile:58: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:04:22 **** Incremental Build of configuration Default for project fir_filter_v1 ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
-00:35:01 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+15:04:23 **** Incremental Build of configuration Default for project iir_test_filter ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
-gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+In file included from main.c:5:0:
+main.c: In function 'main':
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+main.c:30:63: error: subscripted value is neither array nor pointer nor vector
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                                               ^
+In file included from main.c:5:0:
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:4:29: error: incompatible type for argument 2 of 'setze_koeffizienten'
+ #define NENNER_COEFF_VECTOR 1.0000000000,-3.1806385489,3.8611943490,-2.1121553551,0.4382651423
+                             ^
+main.c:52:48: note: in expansion of macro 'NENNER_COEFF_VECTOR'
+  if(setze_koeffizienten(piir_filter_variablen, NENNER_COEFF_VECTOR, ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+                                                ^
+In file included from main.c:6:0:
+include/iir_filter_v1.h:45:5: note: expected 'double *' but argument is of type 'double'
+ int setze_koeffizienten(struct iir_filter_variablen* piir_filter_variablen, double * aKoeffs);
+     ^
+main.c:52:5: error: too many arguments to function 'setze_koeffizienten'
+  if(setze_koeffizienten(piir_filter_variablen, NENNER_COEFF_VECTOR, ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+     ^
+In file included from main.c:6:0:
+include/iir_filter_v1.h:45:5: note: declared here
+ int setze_koeffizienten(struct iir_filter_variablen* piir_filter_variablen, double * aKoeffs);
+     ^
+make: *** [main.o] Error 1
+Makefile:58: recipe for target 'main.o' failed
+15:05:28 **** Incremental Build of configuration Default for project fir_filter_v1 ****
+make all 
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+15:05:29 **** Incremental Build of configuration Default for project iir_test_filter ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+In file included from main.c:5:0:
+main.c: In function 'main':
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:30:14: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+              ^
+include/coeff_iir.h:6:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                          ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:55: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                       ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+include/coeff_iir.h:6:68: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                    ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+main.c:30:63: error: subscripted value is neither array nor pointer nor vector
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                                               ^
+In file included from main.c:5:0:
+include/coeff_iir.h:6:81: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+ #define ZAEHLER_COEFF_VECTOR 0.0004165992,0.0016663968,0.0024995952,0.0016663968,0.0004165992
+                                                                                 ^
+main.c:30:43: note: in expansion of macro 'ZAEHLER_COEFF_VECTOR'
+  n = (sizeof(ZAEHLER_COEFF_VECTOR)/sizeof(ZAEHLER_COEFF_VECTOR[0]))-1;
+                                           ^
+main.c:52:48: error: lvalue required as unary '&' operand
+  if(setze_koeffizienten(piir_filter_variablen, &NENNER_COEFF_VECTOR, &ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+                                                ^
+main.c:52:70: error: lvalue required as unary '&' operand
+  if(setze_koeffizienten(piir_filter_variablen, &NENNER_COEFF_VECTOR, &ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+                                                                      ^
+main.c:52:5: error: too many arguments to function 'setze_koeffizienten'
+  if(setze_koeffizienten(piir_filter_variablen, &NENNER_COEFF_VECTOR, &ZAEHLER_COEFF_VECTOR)!= RET_SUCCESS){
+     ^
+In file included from main.c:6:0:
+include/iir_filter_v1.h:45:5: note: declared here
+ int setze_koeffizienten(struct iir_filter_variablen* piir_filter_variablen, double * aKoeffs);
+     ^
+Makefile:58: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+15:14:54 **** Incremental Build of configuration Default for project fir_filter_v1 ****
+make all 
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+15:14:55 **** Incremental Build of configuration Default for project iir_test_filter ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+main.c: In function 'main':
+main.c:21:35: error: 'ZEAHLER_COEFF_VECTOR' undeclared (first use in this function)
+  double bFilterkoeffizienten[] = {ZEAHLER_COEFF_VECTOR};
+                                   ^
+main.c:21:35: note: each undeclared identifier is reported only once for each function it appears in
+main.c:54:5: error: too many arguments to function 'setze_koeffizienten'
+  if(setze_koeffizienten(piir_filter_variablen, aFilterkoeffizienten, bFilterkoeffizienten)!= RET_SUCCESS){
+     ^
+In file included from main.c:6:0:
+include/iir_filter_v1.h:45:5: note: declared here
+ int setze_koeffizienten(struct iir_filter_variablen* piir_filter_variablen, double * aKoeffs);
+     ^
+make: *** [main.o] Error 1
+Makefile:58: recipe for target 'main.o' failed
+15:15:21 **** Incremental Build of configuration Default for project fir_filter_v1 ****
+make all 
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+15:15:22 **** Incremental Build of configuration Default for project iir_test_filter ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+main.c: In function 'main':
+main.c:54:5: error: too many arguments to function 'setze_koeffizienten'
+  if(setze_koeffizienten(piir_filter_variablen, aFilterkoeffizienten, bFilterkoeffizienten)!= RET_SUCCESS){
+     ^
+In file included from main.c:6:0:
+include/iir_filter_v1.h:45:5: note: declared here
+ int setze_koeffizienten(struct iir_filter_variablen* piir_filter_variablen, double * aKoeffs);
+     ^
+make: *** [main.o] Error 1
+Makefile:58: recipe for target 'main.o' failed
+15:15:52 **** Incremental Build of configuration Default for project fir_filter_v1 ****
+make all 
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+15:15:53 **** Incremental Build of configuration Default for project iir_test_filter ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  iir_filter_v1.c -c -o iir_filter_v1.o 
+gcc -Wpedantic -Wall -Wextra -g3  -Llib main.o iir_filter_v1.o -o program -lmatrixmath
+15:16:00 **** Incremental Build of configuration Default for project iir_test_filter ****
+make all 
+make: Nothing to be done for 'all'.
+15:17:48 **** Incremental Build of configuration Default for project iir_test_filter ****
+make all 
+gcc -Wpedantic -Wall -Wextra -g3  -Iinclude  main.c -c -o main.o 
+gcc -Wpedantic -Wall -Wextra -g3  -Llib main.o iir_filter_v1.o -o program -lmatrixmath

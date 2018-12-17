@@ -1,0 +1,9 @@
+15:15:52 **** Incremental Build of configuration Default for project fir_filter_v1 ****
+make all 
+mkdir -p release
+ar rvs release/libfir_filter_v1.a fir_filter_v1.o  
+r - fir_filter_v1.o
+cp -uf fir_filter_v1.h release/fir_filter_v1.h	
+
+15:15:53 Build Finished (took 954ms)
+

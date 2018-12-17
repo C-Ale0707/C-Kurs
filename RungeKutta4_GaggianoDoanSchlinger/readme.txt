@@ -1,0 +1,1 @@
+Dieses Projekttemplate kann benutzt werden, um Projekte mit eigenen Bibliotheken zu erzeugen. Im Makefile ist vorgesehen, dass die Bibliothek in der Form libBibliotheksName.a im Unterverzeichnis "lib", die zugehörige Headerdatei BibliotheksName.h im Unterverzeichnis "include" liegt.  

@@ -1,7 +1,7 @@
-00:35:01 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
+12:05:37 **** Incremental Build of configuration Default for project RungeKutta4_GaggianoDoanSchlinger ****
 make all 
-gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  runge-kutta-4.c -c -o runge-kutta-4.o 
+gcc -Wpedantic -Wall -Wextra -g3  -I../matrixmath/include  main.c -c -o main.o 
 gcc -Wpedantic -Wall -Wextra -g3  -L../matrixmath/lib main.o matrixA1.o matrixA2.o matrixA3.o runge-kutta-4.o -o program -lmatrixmath
 
-00:35:02 Build Finished (took 771ms)
+12:05:38 Build Finished (took 1s.442ms)
 
