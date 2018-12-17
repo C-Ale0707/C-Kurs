@@ -10,8 +10,8 @@
 int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, const double cdH){
 
 	// Anzahl der Schritte errechnen
-	const int ciSteps = ciT_sim/cdH;
-	// int ciSteps = 200;
+	// const int ciSteps = ciT_sim/cdH;
+	int ciSteps = 200;
 
 	// Dimension der Matrix erfassen
 	int iDimA = pmA->icol;
@@ -121,7 +121,8 @@ int rungeKutta4(struct matrix* pmA, struct vector* pvIC, const int ciT_sim, cons
 		vv_add(&vX,&vK1,&vX);
 
 		//Ergebnis ausgeben:
-		//printf("%i\n",i);
+
+		printf("%i\n",i+1);
 		vprint(&vX);
 		printf("\n");
 	}
