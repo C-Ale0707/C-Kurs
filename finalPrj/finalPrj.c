@@ -26,18 +26,23 @@ int main(void)
 	void * pvSys=NULL;
 	double 		 dY   	= 0.0;
 	double 		 dU   	= 0.0;
-	const double cdtEnd = 5;		// Endzeit der Simulation
+	const double cdtEnd = 10;		// Endzeit der Simulation
 	double		 dt     = 0;		// aktuelle Simulationszeit in Sekunden
 	double		 dtStep = 0;		// Schrittweite des letzten Schrittes in Sekunden
 
 	
-	 // double dKp = 950;
-	 // double dKi = 1500;
-	 double dKd = 1100;
+	// double dKp = 950;
+	// double dKi = 1500;
+	// double dKd = 1100;
 
 	//double dKp = 2320;
 	//double dKi = 0.01;
 	//double dKd = 1000;
+
+	double dKp = 355.0;
+	double dKi = 555.0;
+	double dKd = 155.0;
+
 
 	//Wichtige Variablen für die Verarbeitung der CSV-Dateien:
 
@@ -88,8 +93,8 @@ int main(void)
 	double aFilterkoeffizienten[] = { NENNER_COEFF_VECTOR };
 	double bFilterkoeffizienten[] = { ZAEHLER_COEFF_VECTOR };
 
-	// double aFilterkoeffizienten[] = { 1, 0.577240524806302, 0.421787048689562, 0.0562972364918426 };
-	// double bFilterkoeffizienten[] = { 0.256915601248463, 0.770746803745390, 0.770746803745390, 0.256915601248463 };
+	// double aFilterkoeffizienten[] = { 0.000242904903433892, 0.000485809806867785, 0.000242904903433892, 1, -1.96810331125610, 0.969074930869833 };
+	// double bFilterkoeffizienten[] = { 0.0154662914031034, 0.0154662914031034, 0, 1, -0.969067417193793, 0 };
 
 	int n;
 	struct iir_filter_variablen * piir_filter_variablen;
@@ -185,11 +190,11 @@ int main(void)
 		syms = dtStep/0.01;
 		hilf = dY;
 		filterausgabe_berechnen(piir_filter_variablen, hilf, &dY);
-		printf("\nt=%4.2f Y= %6.2f",dt,dY);
-		fprintf(fp,"%f,\t%f,\t%3.2f\n",dt,points[k+syms].x,dY);
+		// printf("\nt=%4.2f Y= %6.2f",dt,dY);
+		fprintf(fp,"%f,\t%f,\t%3.2f\n",dt,points[k].x,dY);
 		fflush(stdout);
-		k = k + syms;
-		// printf("%f,", hilf-dY);
+		k = k + 1;
+		printf("%f,", hilf-dY);
 	}
 			
 	// Gibt Speicher frei
