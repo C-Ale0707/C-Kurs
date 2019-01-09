@@ -15,7 +15,7 @@ typedef struct{
 	double x; //X-Wert (Zustandswert des Systems)
 }point_t;
 
-
+int pid_regler(double* pdU, double dtStep, double dSoll, double dIst, double dKp, double dKi, double dKd);
 
 int main(void)
 {
@@ -26,14 +26,18 @@ int main(void)
 	void * pvSys=NULL;
 	double 		 dY   	= 0.0;
 	double 		 dU   	= 0.0;
-	const double cdtEnd = 10;		// Endzeit der Simulation
+	const double cdtEnd = 5;		// Endzeit der Simulation
 	double		 dt     = 0;		// aktuelle Simulationszeit in Sekunden
 	double		 dtStep = 0;		// Schrittweite des letzten Schrittes in Sekunden
 
 	
-	double dKp = 0.5;
-	double dKi = 0;
-	double dKd = 50;
+	 // double dKp = 950;
+	 // double dKi = 1500;
+	 double dKd = 1100;
+
+	//double dKp = 2320;
+	//double dKi = 0.01;
+	//double dKd = 1000;
 
 	//Wichtige Variablen für die Verarbeitung der CSV-Dateien:
 
@@ -84,6 +88,9 @@ int main(void)
 	double aFilterkoeffizienten[] = { NENNER_COEFF_VECTOR };
 	double bFilterkoeffizienten[] = { ZAEHLER_COEFF_VECTOR };
 
+	// double aFilterkoeffizienten[] = { 1, 0.577240524806302, 0.421787048689562, 0.0562972364918426 };
+	// double bFilterkoeffizienten[] = { 0.256915601248463, 0.770746803745390, 0.770746803745390, 0.256915601248463 };
+
 	int n;
 	struct iir_filter_variablen * piir_filter_variablen;
 
@@ -133,6 +140,9 @@ int main(void)
 	}
 
 	int k = 0;
+	double hilf;
+	int syms = 0;
+	double dSpeicher = 0;
 	// simuliert das Modell für "cdtEnd" Sekunden
 	while(dt < cdtEnd)
 	{	
@@ -148,6 +158,10 @@ int main(void)
 		int success;
 		success = pid_regler(&dU, dtStep, points[k].x, dY, dKp, dKi, dKd);
 
+		if (success == EXIT_FAILURE){
+			dU = dSpeicher;
+		}
+		dSpeicher = dU;
 		// ############ nachfolgenden Code nicht ändern ################
 		dtStep = 0;	// aktuelle Schrittweite resetten
 		do {
@@ -168,12 +182,14 @@ int main(void)
 		// Schrittweite hier simuliert.
 		//----------------------------------------------------------------------
 		
-
-		filterausgabe_berechnen(piir_filter_variablen, dY, &dY);
-		printf("\nt=%4.2f Y= %6.2d",dt,dY);
-		fprintf(fp,"%f,\t%f,\t%3.2f\n",points[k].t,points[k].x,dY);
+		syms = dtStep/0.01;
+		hilf = dY;
+		filterausgabe_berechnen(piir_filter_variablen, hilf, &dY);
+		printf("\nt=%4.2f Y= %6.2f",dt,dY);
+		fprintf(fp,"%f,\t%f,\t%3.2f\n",dt,points[k+syms].x,dY);
 		fflush(stdout);
-		k = k + 1;
+		k = k + syms;
+		// printf("%f,", hilf-dY);
 	}
 			
 	// Gibt Speicher frei
